@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class if_else_program1 {
+    public static void main(String args[]){
+        try(Scanner sc=new Scanner(System.in)){
+            System.out.print("Enter marks:");
+            int marks=sc.nextInt();
+            if(marks<35&&marks>=1){
+                System.out.println("SORRY you failed the EXAM.");
+            }else if(marks<50&&marks>=1){
+                System.out.println("your grade is C");
+            }else if(marks<70&&marks>=1){
+                System.out.println("your grade is B");
+            }else if(marks<90&&marks>=1){
+                System.out.println("your grade is A");
+            }else if(marks<=100&&marks>=1){
+                System.out.println("your grade is O");
+            }else {
+                System.out.println("your marks are not valid \nenter marks under 0 to 100.");
+            }
+        }
+    }
+}
