@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class if_else_program2 {
+    public static void main(String args[]){
+        try(Scanner sc=new Scanner(System.in)){
+            System.out.print("Enter your age:");
+            int age=sc.nextInt();
+            if(age<3&&age>=0){
+                System.out.println("you are a baby.");
+            }else if(age<12&&age>=0){
+                System.out.println("you are child.");
+            }else if(age<18&&age>=12){
+                System.out.println("you are a teenager.");
+            }else if(age<40&&age>=1){
+                System.out.println("you are a MEN");
+            }else if(age<=150&&age>=1){
+                System.out.println("you are an old man.");
+            }else {
+                System.out.println("your age are not valid \nenter age under 0 to 100.");
+            }
+        }
+    }
+}
