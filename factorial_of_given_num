@@ -1,0 +1,13 @@
+import java.util.Scanner;
+class factorial_of_given_num {
+    public static void main(String args[]){
+        try (Scanner sc = new Scanner(System.in)) {
+            int n,target=1;
+            System.out.print("enter number:");
+            n=sc.nextInt();
+            for(int i=1;i<=n;i++)
+            target*=i;
+            System.out.println("factorial of "+n+" is:"+target);
+        }
+    }
+}
