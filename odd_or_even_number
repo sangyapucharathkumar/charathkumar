@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class odd_or_even_number {
+    public static void main(String args[]){
+        try(Scanner sc=new Scanner(System.in);){
+            System.out.print("enter number:");
+            int n=sc.nextInt();
+            if(n%2==0){
+                System.out.println(n+" is even number.");
+            }else if(n%2==1){
+                System.out.println(n+" is odd number.");
+            }else{
+                System.out.println("enter valid number.");
+            }
+        }
+    }
+}
